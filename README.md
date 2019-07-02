@@ -1,38 +1,56 @@
 # Calibration Verification
 
-[TOC]
+1.  [We Have Done](#We-Have-Done)
+2.  [Main Work](#Main-Work)
+3.  [Temporary Plan](#Temporary-Plan)
 
-## We have done
+
+
+## We Have Done
 
 > We use two cameras (`CameraRed` and `CameraBlue`) to capture images of the four corners of the product, then we can locate the product based on the calibration plate coordinate system. 
 
 - Step 1: Capture the images of the upper left (`Image11`) and lower left (`Image21`) corners of the calibration plate. 
 
-![1](imgs\1.png)
+<div align = center>
+	<img src = "imgs/1.png", width = "90%"/>
+</div>
 
 - Step 2: Capture the image in the upper right (`Image12`) and lower right (`Image22`) corners of the calibration plate. 
 
-![2](imgs\2.png)
+<div align = center>
+	<img src = "imgs/2.png", width = "90%"/>
+</div>
 
 - Step 3: The above two steps can be expressed as the following figure. 
 
-![3](imgs\3.png)
+<div align = center>
+	<img src = "imgs/3.png", width = "75%"/>
+</div>
 
 - Step 4: The four images are shown as follow. The red and blue coordinate systems represent the respective image coordinate systems. We know the positional relationship of each mark on the actual calibration plate. 
 
-![4](imgs\4.png)
+<div align = center>
+	<img src = "imgs/4.png", width = "75%"/>
+</div>
 
 - Step 5: Calibrate the images and extract the center coordinates of the mark points. 
 
-![5](imgs\5.png)
+<div align = center>
+	<img src = "imgs/5.png", width = "75%"/>
+</div>
 
 - Step 6: Calculate the image relationship between two cameras. 
 
-![6](imgs\6.png)
+<div align = center>
+	<img src = "imgs/6.png", width = "75%"/>
+</div>
 
 - Step 7: Calculate the image relationship between two image acquisition locations. 
 
-![7](imgs\7.png)
+<div align = center>
+	<img src = "imgs/7.png", width = "75%"/>
+</div>
 
 - Step 8: According to the center coordinates and the positional relationship of each mark, the mosaic parameters between the four images can be calculated.
 
