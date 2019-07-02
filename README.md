@@ -72,7 +72,7 @@ $$(R_{22}, C_{22}) := (R_{22} + \Delta R_C + \Delta R_M, C_{22} + \Delta C_C + \
 
 - Step 9: According to the new coordinates of the mark points, we can verify whether the polygons formed by the four mark points are strictly rectangular (the side lengths are equal and the angles are right angle).
 - Step 10: Change the position of the calibration plate and verify again. 
-- Step 11: Change the position of the cameras and verify again. 
+- Step 11: Change the acquisition locations of the cameras and verify again. 
 
 
 
